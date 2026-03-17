@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AlgoTrace Studio
+
+A web-based pipeline that automatically generates high-quality Manim animations for LeetCode solutions.
+
+Built with **Next.js 14** (App Router), **TypeScript**, **Tailwind CSS**, **GSAP**, and **Monaco Editor**.
 
 ## Getting Started
 
