@@ -1,0 +1,19 @@
+[
+  { "t": 0.0, "type": "line", "line": 1 },
+  { "t": 0.3, "type": "array_update", "array": "arr", "index": 0, "value": 1 },
+  { "t": 0.4, "type": "array_update", "array": "arr", "index": 1, "value": 3 },
+  { "t": 0.5, "type": "array_update", "array": "arr", "index": 2, "value": 5 },
+  { "t": 0.6, "type": "array_update", "array": "arr", "index": 3, "value": 7 },
+  { "t": 0.7, "type": "array_update", "array": "arr", "index": 4, "value": 9 },
+  { "t": 1.0, "type": "variable_update", "name": "lo", "value": 0 },
+  { "t": 1.1, "type": "variable_update", "name": "hi", "value": 4 },
+  { "t": 1.2, "type": "variable_update", "name": "target", "value": 7 },
+  { "t": 1.5, "type": "variable_update", "name": "mid", "value": 2 },
+  { "t": 2.0, "type": "array_access", "array": "arr", "index": 2 },
+  { "t": 2.5, "type": "compare", "array": "arr", "i": 2, "j": 3 },
+  { "t": 3.0, "type": "variable_update", "name": "lo", "value": 3 },
+  { "t": 3.5, "type": "variable_update", "name": "mid", "value": 3 },
+  { "t": 4.0, "type": "array_access", "array": "arr", "index": 3 },
+  { "t": 4.5, "type": "variable_update", "name": "result", "value": 3 },
+  { "t": 5.0, "type": "line", "line": 9 }
+]

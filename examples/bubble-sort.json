@@ -1,0 +1,23 @@
+[
+  { "t": 0.0, "type": "line", "line": 1 },
+  { "t": 0.5, "type": "variable_update", "name": "n", "value": 5 },
+  { "t": 1.0, "type": "variable_update", "name": "i", "value": 0 },
+  { "t": 1.5, "type": "variable_update", "name": "j", "value": 0 },
+  { "t": 2.0, "type": "array_update", "array": "arr", "index": 0, "value": 5 },
+  { "t": 2.1, "type": "array_update", "array": "arr", "index": 1, "value": 3 },
+  { "t": 2.2, "type": "array_update", "array": "arr", "index": 2, "value": 8 },
+  { "t": 2.3, "type": "array_update", "array": "arr", "index": 3, "value": 1 },
+  { "t": 2.4, "type": "array_update", "array": "arr", "index": 4, "value": 9 },
+  { "t": 3.0, "type": "compare", "array": "arr", "i": 0, "j": 1 },
+  { "t": 3.5, "type": "swap", "array": "arr", "i": 0, "j": 1 },
+  { "t": 4.0, "type": "compare", "array": "arr", "i": 1, "j": 2 },
+  { "t": 4.5, "type": "compare", "array": "arr", "i": 2, "j": 3 },
+  { "t": 5.0, "type": "swap", "array": "arr", "i": 2, "j": 3 },
+  { "t": 5.5, "type": "compare", "array": "arr", "i": 3, "j": 4 },
+  { "t": 6.0, "type": "variable_update", "name": "i", "value": 1 },
+  { "t": 6.5, "type": "compare", "array": "arr", "i": 0, "j": 1 },
+  { "t": 7.0, "type": "compare", "array": "arr", "i": 1, "j": 2 },
+  { "t": 7.5, "type": "compare", "array": "arr", "i": 2, "j": 3 },
+  { "t": 8.0, "type": "variable_update", "name": "i", "value": 2 },
+  { "t": 8.5, "type": "line", "line": 6 }
+]
