@@ -23,6 +23,7 @@ export interface GSAPTimelineInstance {
   pause: () => void;
   restart: () => void;
   seek: (time: number) => void;
+  time: () => number;
   duration: () => number;
   isActive: () => boolean;
   kill: () => void;
@@ -152,6 +153,7 @@ export async function createGSAPTimeline(
     pause: () => tl.pause(),
     restart: () => tl.restart(),
     seek: (time: number) => tl.seek(time),
+    time: () => tl.time(),
     duration: () => tl.duration(),
     isActive: () => tl.isActive(),
     kill: () => tl.kill(),
