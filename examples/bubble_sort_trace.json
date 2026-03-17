@@ -1,0 +1,21 @@
+{
+  "algorithm": "bubble_sort",
+  "language": "python",
+  "code": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr",
+  "initialArray": [64, 34, 25, 12, 22, 11, 90],
+  "events": [
+    {"t": 0.0, "type": "line", "line": 1},
+    {"t": 0.1, "type": "variable_update", "name": "n", "value": 7},
+    {"t": 0.2, "type": "line", "line": 2},
+    {"t": 0.3, "type": "line", "line": 3},
+    {"t": 0.4, "type": "compare", "array": "arr", "index1": 0, "index2": 1},
+    {"t": 0.5, "type": "swap", "array": "arr", "index1": 0, "index2": 1},
+    {"t": 0.6, "type": "array_update", "array": "arr", "index": 0, "value": 34},
+    {"t": 0.7, "type": "array_update", "array": "arr", "index": 1, "value": 64},
+    {"t": 0.8, "type": "compare", "array": "arr", "index1": 1, "index2": 2},
+    {"t": 0.9, "type": "swap", "array": "arr", "index1": 1, "index2": 2},
+    {"t": 1.0, "type": "line", "line": 2},
+    {"t": 1.1, "type": "compare", "array": "arr", "index1": 2, "index2": 3},
+    {"t": 1.2, "type": "swap", "array": "arr", "index1": 2, "index2": 3}
+  ]
+}

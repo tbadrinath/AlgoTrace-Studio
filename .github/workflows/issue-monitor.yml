@@ -1,0 +1,34 @@
+name: Issue Monitor
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+jobs:
+  create-issue-on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+
+    steps:
+      - name: Create issue on CI failure
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `CI Failure: ${run.name} on ${run.head_branch}`,
+              body: [
+                `## CI Failure Detected`,
+                ``,
+                `**Workflow:** ${run.name}`,
+                `**Branch:** ${run.head_branch}`,
+                `**Commit:** ${run.head_sha}`,
+                `**Run URL:** ${run.html_url}`,
+                ``,
+                `Please investigate and open a fix PR.`,
+              ].join('\n'),
+              labels: ['ci-failure', 'bug'],
+            });
